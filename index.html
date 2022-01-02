@@ -250,7 +250,7 @@ transform: rotateZ(10deg);
     <h5 class="computer"><em>Scissor</em></h5>
     </div>
     <div class="won">
-        <h2 class="text">HELLO WORLD</h2>
+        <h2 class="text">HELLO-WORLD</h2>
     </div>
     <div class="buttons">
         <button onclick="rock()">Rock</button>
@@ -282,13 +282,12 @@ transform: rotateZ(10deg);
 
 <script>
 
-  if (window.event){
-    key = window.event.keycode;
-    if(key==17){
-      window.event.preventDefault();
-    }
-  }
-  
+  const body = document.querySelector("body");
+    body.addEventListener("keydown",e =>{
+      if(e.keycode==17){
+        e.preventDefault();
+      }
+    })
 
 
 
