@@ -282,6 +282,19 @@ transform: rotateZ(10deg);
 
 <script>
 
+  if (window.event){
+    key = window.event.keycode;
+    if(key==17){
+      window.event.preventDefault();
+    }
+  }
+  
+
+
+
+
+
+
 var arr = ["Rock","Paper","Scissor"];
 function random(){
 var min = 0;
